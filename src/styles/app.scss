@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+@import "form";
+@import "item";
+@import "spinner";
+
+*,
+*::after,
+*::before {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.App-container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  .main-container {
+    width: 90%;
+    padding-top: 3rem;
+    @media (min-width: 768px) {
+      width: 35rem;
+    }
+  }
+}

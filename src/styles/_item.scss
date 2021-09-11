@@ -1,0 +1,46 @@
+main {
+  margin-top: 3rem;
+  @media (min-width: 768px) {
+    margin-top: 4rem;
+  }
+  .item-container {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(89, 87, 89, 0.5);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(89, 87, 89, 0.5);
+    box-shadow: 2px 2px 5px 0px rgba(89, 87, 89, 0.5);
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 2rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    min-height: 2.5rem;
+    animation: item-animation 0.5s ease forwards;
+    img {
+      height: 100%;
+      width: 2rem;
+      padding-right: 1.5rem;
+    }
+    h3 {
+      font-weight: 400;
+      font-size: 1rem;
+      text-transform: uppercase;
+      padding: 0 1.5rem 0 0;
+      width: 100%;
+    }
+    p {
+      font-weight: 700;
+    }
+  }
+}
+
+@keyframes item-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
